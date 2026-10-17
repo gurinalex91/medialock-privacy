@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b111b">
+  <meta name="description" content="MediaLock Privacy Policy">
+  <title>MediaLock Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --page: #0b111b;
+      --surface: #151f2d;
+      --text: #f3f5fa;
+      --muted: #c4ccda;
+      --accent: #b6c9ff;
+      --border: #293648;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-width: 320px; background: var(--page); }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-shell {
+      width: min(100% - 2rem, 48rem);
+      margin-inline: auto;
+      padding-block: clamp(2rem, 7vw, 5rem) 2rem;
+    }
+
+    .policy {
+      padding: clamp(1.25rem, 5vw, 3rem);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      background: var(--surface);
+      box-shadow: 0 1.25rem 3rem rgb(0 0 0 / 18%);
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.8rem, 6vw, 2.5rem);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    .effective-date {
+      margin: 0 0 2.25rem;
+      color: var(--muted);
+    }
+
+    section + section { margin-top: 2rem; }
+
+    h2 {
+      margin: 0 0 0.55rem;
+      color: var(--text);
+      font-size: 1.12rem;
+      line-height: 1.4;
+      font-weight: 650;
+    }
+
+    p { margin: 0; color: var(--muted); }
+    p + p { margin-top: 1rem; }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover { color: var(--text); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+
+    code {
+      color: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    footer {
+      padding: 1.5rem 0 0.5rem;
+      color: #8592a5;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      .page-shell { width: min(100% - 1rem, 48rem); padding-block: 0.5rem 1rem; }
+      .policy { border-radius: 1rem; padding: 1.25rem; }
+      section + section { margin-top: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <main>
+      <article class="policy" aria-labelledby="page-title">
+        <h1 id="page-title">MediaLock Privacy Policy</h1>
+        <p class="effective-date"><strong>Effective date:</strong> <time datetime="2026-09-30">September 30, 2026</time></p>
+
+        <section aria-labelledby="what-medialock-does">
+          <h2 id="what-medialock-does">What MediaLock does</h2>
+          <p>MediaLock displays playback controls for active media sessions on supported lock-screen widget hosts. An account is not required.</p>
+        </section>
+
+        <section aria-labelledby="notification-access">
+          <h2 id="notification-access">Notification Access and media information</h2>
+          <p>Android's Notification Access is a broad system capability. MediaLock uses it to discover active <code>MediaSession</code>s and update playback controls. The app processes the source application's package and display name, track title and artist, artwork, and playback state. It does not use notification text or content. Media information is processed on this device to display the player and send the playback action you choose.</p>
+        </section>
+
+        <section aria-labelledby="local-storage">
+          <h2 id="local-storage">Local storage and backup</h2>
+          <p>MediaLock stores discovered source package names, display labels, last-seen times and cached source-app icons in private app storage. It also stores your widget appearance settings and source enabled/disabled choices. Track metadata, artwork and playback state are not saved as listening history.</p>
+          <p>Android device-to-device transfer may restore your widget appearance and enabled/disabled source preferences. MediaLock excludes the discovered-player registry and icon cache from transfer and does not use Android cloud backup.</p>
+        </section>
+
+        <section aria-labelledby="network-sharing">
+          <h2 id="network-sharing">Network, analytics, advertising, and sharing</h2>
+          <p>MediaLock does not use a backend, analytics, advertising SDKs, or network connections to transmit your media or notification information. MediaLock does not transmit media or notification information off your device or share it with third parties. Android system services and media-player apps operate under their own privacy terms.</p>
+        </section>
+
+        <section aria-labelledby="deleting-data">
+          <h2 id="deleting-data">Deleting local data and revoking access</h2>
+          <p>Clearing MediaLock storage or uninstalling the app removes its local preferences, discovered-source registry, and cached icons from that installation. Notification Access can be revoked in Android Settings. Revoking it prevents MediaLock from discovering active media sessions until access is granted again.</p>
+        </section>
+
+        <section aria-labelledby="contact">
+          <h2 id="contact">Contact</h2>
+          <p>For questions about MediaLock or this Privacy Policy, contact: <a href="mailto:support.medialock@gmail.com">support.medialock@gmail.com</a></p>
+        </section>
+      </article>
+    </main>
+    <footer>MediaLock</footer>
+  </div>
+</body>
+</html>
